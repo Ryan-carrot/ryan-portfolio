@@ -1,7 +1,7 @@
 # Hexry Development: Ryan's Portfolio
 
 The site I show local business owners when they ask what I do.
-Live at https://ryan-portfolio-tau.vercel.app
+Live at https://hexry.dev
 
 It scores 100 / 100 / 100 / 100 on Lighthouse mobile, measured on the
 deployed URL. That matters more than it sounds: the site's whole
