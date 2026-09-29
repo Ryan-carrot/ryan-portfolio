@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ryan-portfolio-tau.vercel.app/sitemap.xml
+Sitemap: https://hexry.dev/sitemap.xml
