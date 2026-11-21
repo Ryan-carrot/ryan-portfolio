@@ -265,6 +265,17 @@
           </div>
         </article>
 
+        <!-- Pest Crusaders: announcement only. No numbers, claims or screenshots until live and PSI-verified. -->
+        <article class="case-card is-upcoming">
+          <div class="case-body">
+            <div class="case-title-row">
+              <h3>Pest Crusaders</h3>
+              <span class="case-status">Coming soon</span>
+            </div>
+            <p>Client of Hexry Development. Site management and local SEO. Preview coming soon.</p>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -281,23 +292,55 @@
       <div class="project-grid">
 
         <article class="project-card">
-          <div class="browser-frame">
-            <div class="browser-chrome"><span></span><span></span><span></span></div>
-            <img src="assets/img/projects/pantry-roulette.webp" width="900" height="502" alt="Pantry Roulette app screen: ingredient input, vibe selector dropdown set to 'Lazy', and a Spin the Pantry button." loading="lazy" decoding="async">
+          <div class="version-compare">
+            <figure>
+              <div class="browser-frame">
+                <div class="browser-chrome"><span></span><span></span><span></span></div>
+                <img src="assets/img/projects/pantry-roulette-v1.webp" width="900" height="502" alt="Pantry Roulette v1: ingredient input, vibe selector dropdown set to 'Lazy', and a Spin the Pantry button." loading="lazy" decoding="async">
+              </div>
+              <figcaption class="ring-caption">Before · v1</figcaption>
+            </figure>
+            <span class="ring-arrow" aria-hidden="true">→</span>
+            <figure>
+              <div class="phone-frame">
+                <img src="assets/img/projects/pantry-roulette-v2.webp" width="390" height="844" alt="Pantry Roulette v2 on a phone: the recipe reel stopped on Beef Banh Mi Bowls, with a result card showing ingredient match, score, vibe fit, and View recipe, Save and Spin again buttons." loading="lazy" decoding="async">
+              </div>
+              <figcaption class="ring-caption">After · v2</figcaption>
+            </figure>
           </div>
           <div class="project-body">
             <div class="project-title-row">
               <h3>Pantry Roulette</h3>
-              <span class="project-tag live">v1.0.2 · Live</span>
+              <span class="project-tag live">v2.0.1 · Live</span>
             </div>
-            <p>A launched recipe-finder app, built in vanilla JavaScript with no frameworks. My first fully shipped product. It went through the whole lifecycle: build, API integration, an accessibility audit, semantic versioning, DNS configuration, and real go-to-market with real users. Currently in a v1.0.2 bug-fix pass, including a fix to the vibe-scoring engine, ahead of resuming user acquisition. Freemium accounts are next on the roadmap.</p>
+            <p>A free recipe picker. Type what's in your pantry, set a vibe on the dial, and a reel spins and lands on a real recipe that fits both. The recipe opens in a sheet built for cooking from a phone. No account, no ads, and your data stays on your device.</p>
+            <p>v1 was my first shipped product, hand-coded in vanilla JavaScript. v2 is a full redesign and rebuild in strict TypeScript. I wrote the brief and the spec, chose between three design directions, and directed AI agents through a phased build, with tests at every phase and manual QA on a real phone between passes. The result: 212 hermetic tests, all 24 v1 bugs resolved and mapped to their fixes, about 29 kB of JavaScript, WCAG AA contrast measured, and full keyboard and reduced-motion support.</p>
+            <div class="case-field">
+              <span class="case-field-label">Role</span>
+              <p>Product owner and directing engineer: wrote the brief and spec, directed the build, ran QA, shipped.</p>
+            </div>
             <div class="stack-row">
-              <span class="stack-chip">Vanilla JS</span>
-              <span class="stack-chip">REST API</span>
-              <span class="stack-chip">DNS / hosting</span>
-              <span class="stack-chip">a11y audited</span>
+              <span class="stack-chip">TypeScript (strict)</span>
+              <span class="stack-chip">Vite</span>
+              <span class="stack-chip">Vitest</span>
+              <span class="stack-chip">No UI framework</span>
+              <span class="stack-chip">WCAG AA</span>
             </div>
-            <a class="case-link" href="https://pantryroulette.com" target="_blank" rel="noopener">pantryroulette.com ↗</a>
+            <div class="case-field">
+              <span class="case-field-label">The process, in the repo</span>
+              <ul class="process-links">
+                <li><a href="https://github.com/Ryan-carrot/pantry-roulette/tree/main/design" target="_blank" rel="noopener">Brief, mockups &amp; design system</a></li>
+                <li><a href="https://github.com/Ryan-carrot/pantry-roulette/blob/main/docs/MANUAL_TEST.md" target="_blank" rel="noopener">Manual test rounds</a></li>
+                <li><a href="https://github.com/Ryan-carrot/pantry-roulette/blob/main/docs/DECISIONS.md" target="_blank" rel="noopener">Decision log</a></li>
+                <li><a href="https://github.com/Ryan-carrot/pantry-roulette/blob/main/BUGS_RESOLVED.md" target="_blank" rel="noopener">Bugs resolved</a></li>
+                <li><a href="https://github.com/Ryan-carrot/pantry-roulette/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Changelog</a></li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a class="case-link" href="https://pantryroulette.com" target="_blank" rel="noopener">pantryroulette.com ↗</a>
+              <a class="case-link" href="https://github.com/Ryan-carrot/pantry-roulette" target="_blank" rel="noopener">Repo on GitHub ↗</a>
+            </div>
+            <p class="note">Ryan Christian @ Hexry Development</p>
           </div>
         </article>
 
@@ -336,6 +379,7 @@
         <p>I'm based in Roseburg, Oregon; a small town where the web work gets done face-to-face, not through cold outreach at scale. I'm a self-directed, full-stack developer working across HTML, CSS, JavaScript, React, Node, Python, and REST APIs, and I learn by shipping real things rather than working through tutorials in isolation.</p>
         <p>Every site I build gets run through PageSpeed before it's ever pitched. I don't say a site is faster. I show the number, before and after. That standard doesn't stop at client work: Pantry Roulette and Queued have both gone through the parts of a real product that never show up in a screenshot. DNS, accessibility audits, semantic versioning, payment integration, actual users. If I build it, it ships complete, not half-finished.</p>
         <p>I don't reuse a client's design, either. Every business gets a visual identity built for its own category and character, never a reskin of the last job. And when a project's done, you get real ownership of it: real hosting access, real admin credentials, no dependency on me to make basic edits.</p>
+        <p>DISCLOSURE: Hexry Development prides itself on honest, transparecy, security and ownership. We believe the relationship between developers and clients should be open, honest, and clear. We also believe that clients should actually own their websites, their assets, and the information on it. We don't gatekeep, we don't use blackhat practices, and we strive to help and educate our clients. With that considered, Ryan and Hexry Development discloses that we do use AI tooling in our workflows to accelerate our development and ensure security. Security, testing, and design are key principles behind our development workflows. Every project has it's own unique identity and design. Nothing is templated. QA/testing is done at every turn, and logic is tested before a UI even exists. Every site and application we develop is treated as a target, and we do not launch a product without full confidence that it is truly secure, and captures the brand. We do not vibe code. We do not produce "AI slop".</p>
       </div>
       <dl class="about-facts">
         <div class="fact"><dt>Based in</dt><dd>Roseburg, Oregon</dd></div>

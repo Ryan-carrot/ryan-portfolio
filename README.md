@@ -68,6 +68,22 @@ Every number was captured in the PageSpeed Insights UI on the live URL,
 because a score I got in a local terminal is a score I can't show a
 client.
 
+## Content decisions
+
+**Pantry Roulette shows v1 next to v2:** The v1 screenshot stays as the
+"before" and a v2 result screen, captured at phone width from the live
+site, is the "after." They use the same frames and Before → After
+captions as the score rings, so the redesign reads as one more
+before-and-after instead of a new visual idea.
+
+**Clients without a case study get an announcement card:** A dashed
+card at the end of the case studies, with a name, one line and a
+"Coming soon" tag. No numbers, no screenshot, no claims. It gets
+replaced by a real case study once the site is live and PSI-verified.
+
+**The AI disclosure lives in About, once:** It covers the whole site,
+so it isn't repeated on each card.
+
 ## Running it
 
 Open `index.html`.

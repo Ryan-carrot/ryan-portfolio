@@ -571,6 +571,14 @@ a { text-decoration: none; }
   font-style: normal;
 }
 
+/* Announcement card: a client with no case study yet.
+   Dashed border marks it as pending, like the pending ring. */
+.case-card.is-upcoming {
+  border-style: dashed;
+  border-color: var(--border-strong);
+  background: transparent;
+}
+
 @media (min-width: 700px) {
   .case-media { padding: 2rem 2rem 0; }
   .phone-frame { width: 170px; }
@@ -653,6 +661,47 @@ a { text-decoration: none; }
   border: 1px solid var(--border-strong);
   padding: 0.2rem 0.5rem;
   border-radius: var(--radius-sm);
+}
+
+/* Before → after pair for a product that shipped a v2.
+   Reuses the browser frame, phone frame, ring caption and arrow
+   so it reads as the same before/after motif as the score rings. */
+.version-compare {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.4rem 1.25rem;
+  background: linear-gradient(160deg, var(--panel-2), var(--ink-raise));
+  border-bottom: 1px solid var(--border);
+}
+.version-compare figure { margin: 0; min-width: 0; }
+.version-compare .browser-frame {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.version-compare .browser-chrome { padding: 0.45rem 0.6rem; gap: 4px; }
+.version-compare .browser-chrome span { width: 6px; height: 6px; }
+.version-compare .phone-frame { width: 104px; border-radius: 14px; border-width: 3px; }
+
+.process-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+.process-links a {
+  color: var(--muted);
+  border-bottom: 1px solid var(--border-strong);
+}
+.process-links a:hover { color: var(--pass); border-color: var(--pass); }
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
 }
 
 @media (min-width: 900px) {
